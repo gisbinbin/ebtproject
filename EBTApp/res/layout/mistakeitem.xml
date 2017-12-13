@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/miskimg"
+        android:layout_width="64.0dip"
+        android:layout_height="64.0dip"
+        android:layout_margin="6.0dip"
+        android:background="@drawable/circle_back"
+        android:contentDescription="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/tablepic" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/miskusernumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip" />
+
+        <TextView
+            android:id="@+id/miskusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dip" />
+        <TextView
+            android:id="@+id/miskassetsnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dip" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/miskaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip" />
+
+            <TextView
+                android:id="@+id/miskissubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dip"
+                android:layout_marginTop="4dip"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bulelable"
+                android:visibility="gone"
+                android:text="@string/submitstr" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

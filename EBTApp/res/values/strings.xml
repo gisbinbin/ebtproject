@@ -1,0 +1,73 @@
+<resources>
+
+    <string name="app_name">E 表通</string>
+    
+    <string name="oldtable">旧表信息</string>
+    <string name="newtable">新表信息</string>
+    <string name="tablebox">表箱信息</string>
+    <string name="bptable">补拍信息</string>
+    
+    <string name="scan_text">请对准二维码</string>
+
+    <string name="edit_tip">输入查询关键字</string>
+    
+    
+    <string name="boxtable">表箱</string>
+    <string name="boxtable1">表箱(中)</string>
+    <string name="boxtable2">表箱(右)</string>
+    <string name="boxtable3">表箱(其它)</string>
+    
+    <string name="stable">单表</string>
+    <string name="dtable">双表</string>
+    <string name="ztable">整体</string>
+    <string name="ytable">有功</string>
+    <string name="wtable">无功</string>
+    
+    <string name="acttable">CT A相</string>
+    <string name="bcttable">CT B相</string>
+    <string name="ccttable">CT C相</string>
+    <string name="hcttable">CT 合相</string>
+    
+    <string name="username">用户名</string>
+    <string name="usernumber">用户编号</string>
+    <string name="assetsid">资产编号</string>
+    <string name="oassetsid">旧表资产编号</string>
+    <string name="nassetsid">新表资产编号</string>
+    <string name="tbassetsid">表箱资产编号</string>
+    <string name="useraddress">用户地址</string>
+    <string name="equipmentclass">设备类型</string>
+    <string name="inloc">箱柜内位置</string>
+    <string name="datatagstr">备注</string>
+    <string name="readdata">读数</string>
+    <string name="oldreaddata">旧表读数</string>
+    <string name="newreaddata">新表读数</string>
+    <string name="wreaddata">无功读数</string>
+    
+    <string name="seal">封印</string>
+    <string name="boxseal">箱印</string>
+    <string name="boxsealnumber1">箱印(中)</string>
+    <string name="boxsealnumber2">箱印(左)</string>
+    <string name="boxsealnumber3">箱印(右)</string>
+    <string name="boxsealnumber4">箱印(上)</string>
+    <string name="boxsealnumber5">箱印(下)</string>
+    <string name="boxsealnumber6">箱印(其它)</string>
+    <string name="sealnumber">封印号</string>
+    <string name="sealnumber1">编程小门</string>
+    <string name="sealnumber2">电能表端子盒(左)</string>
+    <string name="sealnumber3">电能表端子盒(右)</string>
+    <string name="sealnumber4">互感器接线盒1</string>
+    <string name="sealnumber5">互感器接线盒2</string>
+    <string name="sealnumber6">互感器接线盒3</string>
+    
+    <string name="morepic">添加更多其他图片</string>
+    
+    <string name="bptipstr">请依次补拍照片</string>
+    <string name="bpcontentstr">补拍内容：</string>
+    <string name="otherpicstr">其他图片</string>
+    
+    
+    <string name="countstr">0/0</string>
+    
+    <string name="save">保  存</string>
+    <string name="submitstr">已提交</string>
+</resources>

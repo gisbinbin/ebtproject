@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mytitle_bg_alpha" >
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="75.0dip"
+        android:layout_height="40.0dip"
+        android:text="返回"
+        android:background="@drawable/mm_title_back_btn"
+        android:textColor="@android:color/white"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_marginLeft="2dip"
+        android:layout_marginTop="2.0dip"
+        android:layout_marginBottom="2dip" />
+    <ImageView
+        android:id="@+id/img_user"
+        android:background="@drawable/circle_back"
+        android:scaleType="centerInside"
+        android:src="@drawable/offline_user"
+        android:layout_width="32.0dip"
+        android:layout_height="32.0dip"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"
+        android:layout_margin="6.0dip"/>
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="32.0dip"
+        android:layout_alignBaseline="@+id/button_back"
+        android:layout_alignBottom="@+id/button_back"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="表箱信息"
+        android:layout_margin="6.0dip"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+    <LinearLayout
+        android:id="@+id/button_title"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_alignBaseline="@+id/img_user"
+        android:layout_alignBottom="@+id/img_user"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_margin="2.0dip"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+        <Button 
+            android:id="@+id/left_btn"
+            android:layout_width="88dip"
+            android:layout_height="32dip"
+            android:text="未完成"
+            android:textSize="14sp"
+            android:textColor="#03b3fe"
+            android:background="@drawable/switch_button_left_checked"/>
+        <Button 
+            android:id="@+id/right_btn"
+            android:layout_width="88dip"
+            android:layout_height="32dip"
+            android:text="已完成"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/switch_button_right"/>
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/img_seting"
+        android:layout_width="32.0dip"
+        android:layout_height="32.0dip"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@null"
+        android:src="@drawable/settings_32"
+        android:visibility="gone"
+        android:layout_marginRight="6dip" />
+    
+    <ImageView
+        android:id="@+id/img_light"
+        android:layout_width="32.0dip"
+        android:layout_height="32.0dip"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@null"
+        android:src="@drawable/unlamp"
+        android:visibility="gone"
+        android:layout_marginRight="6dip" />
+    
+    <ImageView
+        android:id="@+id/img_toinstall"
+        android:layout_width="32.0dip"
+        android:layout_height="32.0dip"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@null"
+        android:src="@drawable/toinsert"
+        android:visibility="gone"
+        android:layout_marginRight="6dip" />
+    
+    <ImageView
+        android:id="@+id/img_refresh"
+        android:layout_width="32.0dip"
+        android:layout_height="32.0dip"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@null"
+        android:src="@drawable/refresh_32px"
+        android:visibility="gone"
+        android:layout_marginRight="6dip" />
+
+</RelativeLayout>

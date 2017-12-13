@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/activity_mytitle" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/nrel_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row_titlestyle" >
+
+                <TextView
+                    android:id="@+id/bptxt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginTop="10dip"
+                    android:text="@string/bptable"
+                    android:textColor="@color/textcolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bprel_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row_style"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/bptxt_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginTop="10dip"
+                    android:text="@string/username"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/bp_username"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginRight="12dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/username"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bprel_usernumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row_style"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/bptxt_usernumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginTop="10dip"
+                    android:text="@string/usernumber"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/bp_usernumber"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginRight="12dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/usernumber"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bporel_assetsid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row_style"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/bpotxt_assetsid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginTop="10dip"
+                    android:text="@string/oassetsid"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/bpovalue_assetsid"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginRight="12dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/oassetsid"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bpnrel_assetsid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row_style"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/bpntxt_assetsid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginTop="10dip"
+                    android:text="@string/nassetsid"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/bpnvalue_assetsid"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginRight="12dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/nassetsid"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/bprel_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row_style"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/bptxt_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginTop="10dip"
+                    android:text="@string/useraddress"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/bp_address"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginRight="12dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/useraddress"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row_titlestyle" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginTop="10dip"
+                    android:text="@string/bptipstr"
+                    android:textColor="@color/textcolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row_style"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginTop="10dip"
+                    android:text="@string/bpcontentstr"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/bpmiaosu"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginRight="12dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/rel_ntbmorepicview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row_style" >
+
+                <com.rm.until.MyGridView
+                    android:id="@+id/bpgridtbView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="@null"
+                    android:numColumns="3" >
+                </com.rm.until.MyGridView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/bpcamerabtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@null"
+                    android:src="@drawable/btn_camear3x" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp" >
+
+        <Button
+            android:id="@+id/bpsavebtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/btn_style"
+            android:text="@string/save"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

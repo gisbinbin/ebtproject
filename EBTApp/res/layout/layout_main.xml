@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mainbg"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/activity_mytitle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <EditText
+                android:id="@+id/edtxt"
+                android:layout_width="fill_parent"
+                android:layout_height="32dip"
+                android:layout_margin="8dip"
+                android:background="@drawable/bg_edittext"
+                android:gravity="center"
+                android:hint="@string/edit_tip"
+                android:padding="2dip"
+                android:singleLine="true"
+                android:textColorHint="#AAAAAA"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:orientation="vertical" >
+
+            <!-- android:background="@drawable/circle_back" -->  
+            <ImageView
+                android:id="@+id/addtool"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:src="@drawable/add_48px" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/testbutton1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style"
+            android:text="扫 一 扫"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/testbutton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/scanqr" />
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/zcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/lablebg"
+                android:text="3/24"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

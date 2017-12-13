@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/activity_mytitle" />
+
+    <RelativeLayout
+        android:id="@+id/rel_light"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/row_style" >
+
+        <ImageView
+            android:id="@+id/img_light"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="12dip"
+            android:contentDescription="@null"
+            android:src="@drawable/lampblack" />
+
+        <TextView
+            android:id="@+id/txt_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="12dip"
+            android:layout_toRightOf="@id/img_light"
+            android:text="开启扫描灯"
+            android:textSize="16sp" />
+
+        <com.rm.until.MySwitch
+            android:id="@+id/light_Switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="12dip" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rel_datacheck"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/row_style" >
+
+        <ImageView
+            android:id="@+id/img_datacheck"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="12dip"
+            android:contentDescription="@null"
+            android:src="@drawable/datacheck" />
+
+        <TextView
+            android:id="@+id/txt_datacheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="12dip"
+            android:layout_toRightOf="@id/img_datacheck"
+            android:text="开启数据必填模式"
+            android:textSize="16sp" />
+
+        <com.rm.until.MySwitch
+            android:id="@+id/datacheck_Switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="12dip" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rel_imgcheck"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/row_style" >
+
+        <ImageView
+            android:id="@+id/img_imgcheck"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="12dip"
+            android:contentDescription="@null"
+            android:src="@drawable/imgcheck" />
+
+        <TextView
+            android:id="@+id/txt_imgcheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="12dip"
+            android:layout_toRightOf="@id/img_imgcheck"
+            android:text="开启整体图检查"
+            android:textSize="16sp" />
+
+        <com.rm.until.MySwitch
+            android:id="@+id/imgcheck_Switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="12dip" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rel_qwork"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/row_style" >
+
+        <ImageView
+            android:id="@+id/img_qwork"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="12dip"
+            android:contentDescription="@null"
+            android:src="@drawable/qword" />
+
+        <TextView
+            android:id="@+id/txt_qwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="12dip"
+            android:layout_toRightOf="@id/img_qwork"
+            android:text="开启快速拍照模式"
+            android:textSize="16sp" />
+
+        <com.rm.until.MySwitch
+            android:id="@+id/qwork_Switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="12dip" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rel_qphoto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/row_style" >
+
+        <ImageView
+            android:id="@+id/img_qphoto"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="12dip"
+            android:contentDescription="@null"
+            android:src="@drawable/qword" />
+
+        <TextView
+            android:id="@+id/txt_qphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="12dip"
+            android:layout_toRightOf="@id/img_qphoto"
+            android:text="开启连续模式"
+            android:textSize="16sp" />
+
+        <com.rm.until.MySwitch
+            android:id="@+id/qphoto_Switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="12dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_upload"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/row_style" >
+
+        <ImageView
+            android:id="@+id/img_upload"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="12dip"
+            android:contentDescription="@null"
+            android:src="@drawable/upload" />
+
+        <TextView
+            android:id="@+id/txt_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="12dip"
+            android:layout_toRightOf="@id/img_upload"
+            android:text="提交数据"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/txt_doing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="12dip"
+            android:text="正在提交数据……" />
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/rel_uploadimg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/row_style" >
+
+        <ImageView
+            android:id="@+id/img_uploadimg"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="12dip"
+            android:contentDescription="@null"
+            android:src="@drawable/repeatsubmit" />
+
+        <TextView
+            android:id="@+id/txt_uploadimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="12dip"
+            android:layout_toRightOf="@id/img_uploadimg"
+            android:text="提交失败照片"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/txt_submitimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="12dip"
+            android:text="正在提交数据……" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_clear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/row_style" >
+
+        <ImageView
+            android:id="@+id/img_clear"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="12dip"
+            android:contentDescription="@null"
+            android:src="@drawable/delete_24px" />
+
+        <TextView
+            android:id="@+id/txt_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="12dip"
+            android:layout_toRightOf="@id/img_clear"
+            android:text="清除数据"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rel_bppic"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/row_style" >
+
+        <ImageView
+            android:id="@+id/img_bppic"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="12dip"
+            android:contentDescription="@null"
+            android:src="@drawable/refresh" />
+
+        <TextView
+            android:id="@+id/txt_bppic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="12dip"
+            android:layout_toRightOf="@id/img_bppic"
+            android:text="补拍照片"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/closeseting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/btn_style"
+        android:text="关闭" />
+
+</LinearLayout>
