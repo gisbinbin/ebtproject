@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Webtest\WebCBXT</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/WebCBXT.dll">
+      <publishTime>09/21/2017 12:02:13</publishTime>
+    </File>
+    <File Include="ImgData/test.jpg">
+      <publishTime>07/08/2017 13:42:55</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>07/06/2017 11:31:26</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>09/21/2017 12:02:14</publishTime>
+    </File>
+    <File Include="ReceivedPointFile.ashx">
+      <publishTime>09/19/2017 10:32:31</publishTime>
+    </File>
+    <File Include="ReceiveServices.ashx">
+      <publishTime>07/06/2017 10:51:22</publishTime>
+    </File>
+    <File Include="upload/20170707.log">
+      <publishTime>07/08/2017 13:42:03</publishTime>
+    </File>
+    <File Include="upload/test.jpg">
+      <publishTime>07/08/2017 13:42:55</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/06/2017 12:17:06</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
