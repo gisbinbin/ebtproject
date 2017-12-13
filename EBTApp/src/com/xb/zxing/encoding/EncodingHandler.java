@@ -19,22 +19,23 @@ import com.google.zxing.EncodeHintType;
 import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
+
 /**
  * @author Ryan Tang
- *
+ * 
  */
 public final class EncodingHandler {
 	private static final int BLACK = 0xff000000;
-	
-	public static Bitmap createQRCode(String str,int widthAndHeight){
+
+	public static Bitmap createQRCode(String str, int widthAndHeight) {
 		try {
 			// 判断URL合法性
 			if (str == null || "".equals(str) || str.length() < 1) {
 				return null;
 			}
-			Hashtable<EncodeHintType, String> hints = new Hashtable<EncodeHintType, String>();  
-	        hints.put(EncodeHintType.CHARACTER_SET, "utf-8"); 
-	        // 图像数据转换，使用了矩阵转换
+			Hashtable<EncodeHintType, String> hints = new Hashtable<EncodeHintType, String>();
+			hints.put(EncodeHintType.CHARACTER_SET, "utf-8");
+			// 图像数据转换，使用了矩阵转换
 			BitMatrix matrix = new MultiFormatWriter().encode(str,
 					BarcodeFormat.QR_CODE, widthAndHeight, widthAndHeight);
 			int width = matrix.getWidth();
@@ -59,8 +60,7 @@ public final class EncodingHandler {
 			return null;
 		}
 	}
-	
-	
+
 	/**
 	 * 生成条形码
 	 * 
@@ -75,7 +75,8 @@ public final class EncodingHandler {
 	 *            是否在条形码下方显示内容
 	 * @return
 	 */
-	public static Bitmap creatBarcode(Context context, String contents,int desiredWidth, int desiredHeight, boolean displayCode) {
+	public static Bitmap creatBarcode(Context context, String contents,
+			int desiredWidth, int desiredHeight, boolean displayCode) {
 		try {
 			Bitmap ruseltBitmap = null;
 			/**
@@ -92,8 +93,8 @@ public final class EncodingHandler {
 						desiredWidth, desiredHeight);
 				Bitmap codeBitmap = creatCodeBitmap(contents, desiredWidth + 2
 						* marginW, desiredHeight, context);
-				ruseltBitmap = mixtureBitmap(barcodeBitmap, codeBitmap, new PointF(
-						0, desiredHeight));
+				ruseltBitmap = mixtureBitmap(barcodeBitmap, codeBitmap,
+						new PointF(0, desiredHeight));
 			} else {
 				ruseltBitmap = encodeAsBitmap(contents, barcodeFormat,
 						desiredWidth, desiredHeight);
@@ -118,7 +119,8 @@ public final class EncodingHandler {
 	 * @return
 	 * @throws WriterException
 	 */
-	protected static Bitmap encodeAsBitmap(String contents,BarcodeFormat format, int desiredWidth, int desiredHeight) {
+	protected static Bitmap encodeAsBitmap(String contents,
+			BarcodeFormat format, int desiredWidth, int desiredHeight) {
 		final int WHITE = 0xFFFFFFFF;
 		final int BLACK = 0xFF000000;
 
@@ -158,7 +160,8 @@ public final class EncodingHandler {
 	 * @param context
 	 * @return
 	 */
-	protected static Bitmap creatCodeBitmap(String contents, int width,int height, Context context) {
+	protected static Bitmap creatCodeBitmap(String contents, int width,
+			int height, Context context) {
 		TextView tv = new TextView(context);
 		LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
 				LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
@@ -187,7 +190,8 @@ public final class EncodingHandler {
 	 *            第二个Bitmap开始绘制的起始位置（相对于第一个Bitmap）
 	 * @return
 	 */
-	protected static Bitmap mixtureBitmap(Bitmap first, Bitmap second,PointF fromPoint) {
+	protected static Bitmap mixtureBitmap(Bitmap first, Bitmap second,
+			PointF fromPoint) {
 		if (first == null || second == null || fromPoint == null) {
 			return null;
 		}

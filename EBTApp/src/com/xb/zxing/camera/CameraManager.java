@@ -45,10 +45,10 @@ public final class CameraManager {
 	// private static final int MIN_FRAME_HEIGHT = 240;
 	// private static final int MAX_FRAME_WIDTH = 480;
 	// private static final int MAX_FRAME_HEIGHT = 360;
-//	private static final int MIN_FRAME_WIDTH = 480;
-//	private static final int MIN_FRAME_HEIGHT = 480;
-//	private static final int MAX_FRAME_WIDTH = 960;
-//	private static final int MAX_FRAME_HEIGHT = 720;
+	// private static final int MIN_FRAME_WIDTH = 480;
+	// private static final int MIN_FRAME_HEIGHT = 480;
+	// private static final int MAX_FRAME_WIDTH = 960;
+	// private static final int MAX_FRAME_HEIGHT = 720;
 
 	private static CameraManager cameraManager;
 
@@ -136,31 +136,21 @@ public final class CameraManager {
 		int span = maxZoom / 3;
 		int zoom = parameters.getZoom();
 		if (parameters.isZoomSupported()) {// 支持放大镜头
-			if (zoomTo<-1)
-			{
-				if(zoomout)
-				{
+			if (zoomTo < -1) {
+				if (zoomout) {
 					zoom = maxZoom;
 					zoomout = false;
-				}
-				else
+				} else
 					return;
-			}
-			else if(zoomTo==0)
-			{
+			} else if (zoomTo == 0) {
 				return;
-			}
-			else if(zoomTo>0)
-			{
-				if(zoomout)
-				{
-					zoom=zoomTo;
+			} else if (zoomTo > 0) {
+				if (zoomout) {
+					zoom = zoomTo;
 					zoomout = false;
-				}
-				else
+				} else
 					return;
-			}
-			else {
+			} else {
 				if (zoomout) {
 					if (zoom == 0) {
 						zoom = span;

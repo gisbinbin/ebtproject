@@ -53,7 +53,6 @@ final class DecodeHandler extends Handler {
 	public void handleMessage(Message message) {
 		switch (message.what) {
 		case R.id.decode:
-			// Log.d(TAG, "Got decode message");
 			decode((byte[]) message.obj, message.arg1, message.arg2);
 			break;
 		case R.id.quit:

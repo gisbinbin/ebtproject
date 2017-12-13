@@ -110,8 +110,9 @@ public final class CaptureActivityHandler extends Handler {
 					CameraManager.get().zoomout(zoom);
 					time = System.currentTimeMillis();
 				}
+			} else {
+				CameraManager.get().zoomout(zoom);
 			}
-			else{CameraManager.get().zoomout(zoom);}
 			state = State.PREVIEW;
 			CameraManager.get().requestPreviewFrame(decodeThread.getHandler(),
 					R.id.decode);
